@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MarsRobotProblem.Interfaces
 {
-    internal interface ICommandInterpreter
+    public interface ICommandInterpreter
     {
         public INavigationCommand Interpret(char command);
     }

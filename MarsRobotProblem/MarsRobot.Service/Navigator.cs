@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MarsRobotProblem.MarsRobot.Service
 {
-    internal class Navigator 
+    public class Navigator 
     {
         private IRobot robot;
 

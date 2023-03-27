@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MarsRobotProblem.MarsRobot.Service.MarsRobot.Factories
 {
-    internal class NavCommandInterpreter : ICommandInterpreter
+    public class NavCommandInterpreter : ICommandInterpreter
     {
         public INavigationCommand Interpret(char command)
         {

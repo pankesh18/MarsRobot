@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MarsRobotProblem.Interfaces
 {
-    internal interface INavigationCommand
+    public interface INavigationCommand
     {
         public void Execute(IRobot robot);
     }
