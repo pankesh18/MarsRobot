@@ -10,10 +10,8 @@ namespace MarsRobotProblem.MarsRobot.Service
 {
     internal class RightCommand : INavigationCommand
     {
-        public void Execute(Robot robot)
+        public void Execute(IRobot robot)
         {
-            //navigator.GoRight();
-
 
             try
             {

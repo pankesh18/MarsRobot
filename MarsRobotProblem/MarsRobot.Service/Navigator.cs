@@ -1,5 +1,6 @@
 ﻿using MarsRobotProblem.Interfaces;
 using MarsRobotProblem.MarsRobot.Data;
+using MarsRobotProblem.MarsRobot.Service.MarsRobot.Factories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,12 +11,23 @@ namespace MarsRobotProblem.MarsRobot.Service
 {
     internal class Navigator 
     {
-        private Robot robot;
+        private IRobot robot;
 
         private string commands;
 
+        private static Navigator instance = null;
 
-        public Navigator(Robot robot, string commands)
+
+        public static Navigator GetNavigator(IRobot robot, string commands)
+        {
+            if (instance == null)
+            {
+                    instance = new Navigator(robot, commands);
+            }
+            return instance;
+        }
+
+        private Navigator(IRobot robot, string commands)
         {
             this.robot = robot;
             this.commands = commands;

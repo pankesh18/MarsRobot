@@ -10,7 +10,7 @@ namespace MarsRobotProblem.MarsRobot.Service
 {
     internal class ForwardCommand : INavigationCommand
     {
-        public void Execute(Robot robot)
+        public void Execute(IRobot robot)
         {
             try
             {

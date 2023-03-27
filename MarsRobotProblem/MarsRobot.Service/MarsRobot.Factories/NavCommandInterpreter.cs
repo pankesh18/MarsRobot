@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarsRobotProblem.MarsRobot.Service
+namespace MarsRobotProblem.MarsRobot.Service.MarsRobot.Factories
 {
     internal class NavCommandInterpreter : ICommandInterpreter
     {
@@ -14,11 +14,11 @@ namespace MarsRobotProblem.MarsRobot.Service
         {
             try
             {
-                if (Char.ToLower(command) == 'l')
+                if (char.ToLower(command) == 'l')
                 {
                     return new LeftCommand();
                 }
-                else if (Char.ToLower(command) == 'r')
+                else if (char.ToLower(command) == 'r')
                 {
                     return new RightCommand();
                 }

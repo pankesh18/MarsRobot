@@ -11,6 +11,6 @@ namespace MarsRobotProblem.Interfaces
 {
     internal interface INavigationCommand
     {
-        public void Execute(Robot robot);
+        public void Execute(IRobot robot);
     }
 }

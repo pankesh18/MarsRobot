@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MarsRobotProblem.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,12 +7,8 @@ using System.Threading.Tasks;
 
 namespace MarsRobotProblem.MarsRobot.Data
 {
-    public class Robot
+    public class Robot:IRobot
     {
-        public Direction Direction { get;  set; }
-        public int x { get;  set; }
-        public int y { get;  set; }
-
         public Robot()
         {
             Direction = Direction.North;
